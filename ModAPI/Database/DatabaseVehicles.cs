@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using TommoJProductions.ModApi.Attachable;
+using eightyseven.ModApi.Attachable;
 
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Database
+namespace eightyseven.ModApi.Database
 {
     /// <summary>
     /// Represents all vehicles in the game.

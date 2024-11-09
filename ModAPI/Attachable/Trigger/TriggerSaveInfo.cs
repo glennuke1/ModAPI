@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents trigger save info.

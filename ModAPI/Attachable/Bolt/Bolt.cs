@@ -7,12 +7,12 @@ using HutongGames.PlayMaker;
 using MSCLoader;
 using UnityEngine;
 
-using TommoJProductions.ModApi;
+using eightyseven.ModApi;
 
 using Object = UnityEngine.Object;
 using System.Runtime.Remoting.Messaging;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// The Base Bolt. All basic bolt function of a bolt. Overridable.

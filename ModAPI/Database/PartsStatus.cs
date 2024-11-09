@@ -1,7 +1,7 @@
 ﻿using HutongGames.PlayMaker;
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Database
+namespace eightyseven.ModApi.Database
 {
     /// <summary>
     /// Represents the status database.

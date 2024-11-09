@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.YieldInstructions
+namespace eightyseven.ModApi.YieldInstructions
 {
     /// <summary>
     /// Represents helpful custom yield instructions.

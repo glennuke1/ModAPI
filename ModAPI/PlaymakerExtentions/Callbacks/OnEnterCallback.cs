@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TommoJProductions.ModApi.PlaymakerExtentions
+namespace eightyseven.ModApi.PlaymakerExtentions
 {
     /// <summary>
     /// Represents the on enter state action callback

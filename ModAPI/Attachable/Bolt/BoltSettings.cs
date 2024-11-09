@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents bolt settings eg => the size of ther bolt.

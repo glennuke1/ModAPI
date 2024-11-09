@@ -4,18 +4,18 @@ using System.Resources;
 
 // General Information
 [assembly: AssemblyTitle("ModApi")]
-[assembly: AssemblyDescription("ModApi v0.2.0 BUILD 166")]
+[assembly: AssemblyDescription("ModApi v0.2.0 BUILD 176")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tommo J. Productions")]
+[assembly: AssemblyCompany("eightyseven")]
 [assembly: AssemblyProduct("ModApi")]
-[assembly: AssemblyCopyright("Tommo J. Productions Copyright © 2024")]
+[assembly: AssemblyCopyright("eightyseven Copyright © 2024")]
 [assembly: NeutralResourcesLanguage("en-AU")]
 
 // Version information
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("0.2.0.166")]
+[assembly: AssemblyFileVersion("0.2.0.176")]
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ namespace TommoJProductions.ModApi
         /// <summary>
         /// Represents latest release version date. Format: dd:MM:yyyy hh:mm tt
         /// </summary>
-	    public static readonly string lastestRelease = "24.10.2024 09:39 PM";
+	    public static readonly string lastestRelease = "01.11.2024 07:20 PM";
 
         /// <summary>
         /// Represents current version. (Excluding build number)
@@ -40,20 +40,20 @@ namespace TommoJProductions.ModApi
         /// <summary>
         /// Represents current full version . (including build number)
         /// </summary>
-	    public static readonly string fullVersion = "0.2.0.166";
+	    public static readonly string fullVersion = "0.2.0.176";
         /// <summary>
         /// Represents current (constant) full version . (including build number)
         /// </summary>
-	    public const string FULL_VERSION = "0.2.0.166";
+	    public const string FULL_VERSION = "0.2.0.176";
         
         /// <summary>
         /// Represents current build number. (excludes major, minor and revision numbers)
         /// </summary>
-	    public static readonly string build = "166";
+	    public static readonly string build = "176";
         /// <summary>
         /// Represents current (const) build number. (excludes major, minor and revision numbers)
         /// </summary>
-	    public const string BUILD = "166";
+	    public const string BUILD = "176";
         
         /// <summary>
         /// Represents if the mod has been complied for x64

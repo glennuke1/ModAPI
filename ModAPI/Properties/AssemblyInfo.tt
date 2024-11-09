@@ -165,8 +165,8 @@ namespace <#= this.namespaceName #>.<#= this.assemblyTitle.Replace(" ", "") #>
     int revision = 0;
     int build = 0;
     string assemblyTitle = "ModApi";
-    string assemblyAuthor = "Tommo J. Productions";
-    string namespaceName = "TommoJProductions";
+    string assemblyAuthor = "eightyseven";
+    string namespaceName = "eightyseven";
     string ttFileName = "AssemblyInfo.tt";
     bool autoRevisionUpdateDaily = false;
     DateTime projectStartDate = new DateTime(2022, 1, 1);

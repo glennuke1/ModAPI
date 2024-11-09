@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TommoJProductions.ModApi.Database
+namespace eightyseven.ModApi.Database
 {
     /// <summary>
     /// Represents the satsuma.

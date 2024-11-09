@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     /// <summary>
     /// Represents a only x, y, z from a Vector3

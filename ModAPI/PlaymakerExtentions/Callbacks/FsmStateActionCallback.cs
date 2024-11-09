@@ -1,7 +1,7 @@
 ﻿using HutongGames.PlayMaker;
 using System;
 
-namespace TommoJProductions.ModApi.PlaymakerExtentions
+namespace eightyseven.ModApi.PlaymakerExtentions
 {
     /// <summary>
     /// 

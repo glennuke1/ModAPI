@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using TanjentOGG;
 
-using TommoJProductions.ModApi.Attachable;
+using eightyseven.ModApi.Attachable;
 
 using UnityEngine;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     /// <summary>
     /// Represents save and load logic.

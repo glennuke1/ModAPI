@@ -7,9 +7,9 @@
     <Platform Condition=" '$(Platform)' == 'x64'">
     </Platform>
     <ProjectGuid>{2CEAE666-CBA5-4FA6-AEE3-D6C5CFB2DE20}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TommoJProductions.ModApi</RootNamespace>
+    <RootNamespace>eightyseven.ModApi</RootNamespace>
     <AssemblyName>ModApi</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -80,6 +80,7 @@
     <Compile Include="Attachable\Trigger\TriggerSettings.cs" />
     <Compile Include="LevelManager.cs" />
     <Compile Include="ConsoleCommands.cs" />
+    <Compile Include="ModAPI.cs" />
     <Compile Include="YieldInstructions\CustomYieldInstructions.cs" />
     <Compile Include="Database\DatabaseVehicle.cs" />
     <Compile Include="Database\GameParts\Block.cs" />
@@ -99,7 +100,6 @@
     <Compile Include="Database\GameParts\RockerShaft.cs" />
     <Compile Include="Database\Vehicles\Satsuma.cs" />
     <Compile Include="DevMode.cs" />
-    <Compile Include="EntryPoint.cs" />
     <Compile Include="ModApiExtentions.cs" />
     <Compile Include="ModApiLoader.cs" />
     <Compile Include="PlaymakerExtentions\Callbacks\FsmStateActionCallback.cs" />
@@ -165,11 +165,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>IF EXIST "$(TargetDir)$(TargetName).dll" (
-DEL "$(TargetDir)$(TargetName).dll"
-)
-
-rename "$(TargetDir)$(TargetName).exe" "$(TargetName).dll"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>"$(DevEnvDir)TextTransform.exe" -a !!BuildConfiguration!$(Configuration) "$(ProjectDir)Properties\AssemblyInfo.tt"</PreBuildEvent>

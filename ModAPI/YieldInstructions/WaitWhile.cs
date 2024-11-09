@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace TommoJProductions.ModApi.YieldInstructions
+namespace eightyseven.ModApi.YieldInstructions
 {
     /// <summary>
     /// 

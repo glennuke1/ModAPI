@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using static MSCLoader.ModConsole;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents an installable and boltable part.
@@ -210,7 +210,6 @@ namespace TommoJProductions.ModApi.Attachable
             disassemble();
             onJointBreak?.Invoke(breakForce);
         }
-
         #endregion
 
         #region IEnumerators

@@ -1,10 +1,10 @@
 ﻿using MSCLoader;
 using UnityEngine;
-using TommoJProductions.ModApi.Database.GameParts;
+using eightyseven.ModApi.Database.GameParts;
 using System.Reflection;
 using System.Linq;
 
-namespace TommoJProductions.ModApi.Database
+namespace eightyseven.ModApi.Database
 {
     /// <summary>
     /// Represents the Database Motor.

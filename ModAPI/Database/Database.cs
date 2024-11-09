@@ -6,7 +6,7 @@ using UnityEngine;
 using MSCLoader;
 using HutongGames.PlayMaker;
 
-namespace TommoJProductions.ModApi.Database
+namespace eightyseven.ModApi.Database
 {
     /// <summary>
     /// Represents the game database.

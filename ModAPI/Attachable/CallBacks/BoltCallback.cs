@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
 using static UnityEngine.GUILayout;
-using static TommoJProductions.ModApi.ModClient;
+using static eightyseven.ModApi.ModClient;
 using MSCLoader;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents a callback for bolts.

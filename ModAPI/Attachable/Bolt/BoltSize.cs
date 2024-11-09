@@ -1,5 +1,5 @@
 ﻿
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents all bolt sizes in game.

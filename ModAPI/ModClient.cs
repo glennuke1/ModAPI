@@ -5,12 +5,12 @@ using System.Linq;
 using System.Reflection;
 using HutongGames.PlayMaker;
 using MSCLoader;
-using TommoJProductions.ModApi.Attachable;
-using TommoJProductions.ModApi.Database.GameParts;
+using eightyseven.ModApi.Attachable;
+using eightyseven.ModApi.Database.GameParts;
 using UnityEngine;
 using static UnityEngine.GUILayout;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     #region enums
 

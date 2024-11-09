@@ -9,7 +9,7 @@ using MSCLoader;
 
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents Bolt Manager. Logic. 
@@ -81,7 +81,7 @@ namespace TommoJProductions.ModApi.Attachable
 
             if (!_assetsLoaded)
             {
-                AssetBundle ab = LoadAssets.LoadBundle("TommoJProductions.ModApi.Resources.modapi.unity3d");
+                AssetBundle ab = LoadAssets.LoadBundle("eightyseven.ModApi.Resources.modapi.unity3d");
                 if (ab == null)
                 {
                     ModConsole.Error("AssetBundle is null");

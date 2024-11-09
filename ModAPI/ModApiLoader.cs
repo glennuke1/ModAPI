@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MSCLoader;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     /// <summary>
     /// Represents behaviour to load modapi stuff. eg bolt assets, load physics raycaster behaviour

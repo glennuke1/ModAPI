@@ -9,7 +9,7 @@ using HutongGames.PlayMaker;
 using MSCLoader;
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents the Parts Manager. Handles Part AutoSave, Drop, Throw and Pick up Logic.

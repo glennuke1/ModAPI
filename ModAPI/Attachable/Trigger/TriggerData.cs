@@ -5,7 +5,7 @@ using System.Text;
 
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// <see cref="ScriptableObject"/>. Parts (<see cref="Part.triggerData"/>) can be installed to triggers (<see cref="TriggerCallback.triggerData"/>) that have the same <see cref="TriggerData"/>.

@@ -1,11 +1,11 @@
 ﻿using MSCLoader;
 using System;
 using System.Collections;
-using TommoJProductions.ModApi.Attachable;
+using eightyseven.ModApi.Attachable;
 using UnityEngine;
-using static TommoJProductions.ModApi.ModClient;
+using static eightyseven.ModApi.ModClient;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
 
     /// <summary>

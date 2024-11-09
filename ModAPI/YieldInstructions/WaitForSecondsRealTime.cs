@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace TommoJProductions.ModApi.YieldInstructions
+namespace eightyseven.ModApi.YieldInstructions
 {
     /// <summary>
     /// Waits for seconds in real time.

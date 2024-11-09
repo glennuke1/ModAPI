@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TommoJProductions.ModApi.Attachable
+namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents settings for the part class.

@@ -7,16 +7,16 @@ using System.Text;
 
 using MSCLoader;
 
-using TommoJProductions.ModApi.Attachable;
-using TommoJProductions.ModApi.Database;
-using TommoJProductions.ModApi.Database.GameParts;
+using eightyseven.ModApi.Attachable;
+using eightyseven.ModApi.Database;
+using eightyseven.ModApi.Database.GameParts;
 using UnityEngine;
 
-using static TommoJProductions.ModApi.Attachable.Part;
-using static TommoJProductions.ModApi.ModClient;
+using static eightyseven.ModApi.Attachable.Part;
+using static eightyseven.ModApi.ModClient;
 using static UnityEngine.GUILayout;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     /// <summary>
     /// Represents debug behaviour for mod api.

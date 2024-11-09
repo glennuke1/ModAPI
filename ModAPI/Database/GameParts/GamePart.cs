@@ -2,7 +2,7 @@
 using UnityEngine;
 using HutongGames.PlayMaker;
 
-namespace TommoJProductions.ModApi.Database.GameParts
+namespace eightyseven.ModApi.Database.GameParts
 {
     /// <summary>
     /// Represents a game part.

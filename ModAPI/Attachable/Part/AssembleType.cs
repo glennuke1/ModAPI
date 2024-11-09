@@ -1,4 +1,4 @@
-﻿namespace TommoJProductions.ModApi.Attachable
+﻿namespace eightyseven.ModApi.Attachable
 {
     /// <summary>
     /// Represents supported assemble types.

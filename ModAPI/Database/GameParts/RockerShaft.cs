@@ -1,6 +1,6 @@
 ﻿using HutongGames.PlayMaker;
 
-namespace TommoJProductions.ModApi.Database.GameParts
+namespace eightyseven.ModApi.Database.GameParts
 {
     /// <summary>
     /// Represents the rocker shaft game part.

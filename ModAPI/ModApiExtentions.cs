@@ -8,15 +8,15 @@ using System.Text;
 using HutongGames.PlayMaker;
 using MSCLoader;
 
-using TommoJProductions.ModApi.Attachable;
-using TommoJProductions.ModApi.PlaymakerExtentions;
+using eightyseven.ModApi.Attachable;
+using eightyseven.ModApi.PlaymakerExtentions;
 using UnityEngine;
 
 using static UnityEngine.GUILayout;
-using static TommoJProductions.ModApi.ModClient;
+using static eightyseven.ModApi.ModClient;
 using HutongGames.PlayMaker.Actions;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     /// <summary>
     /// Represents common extention methods. 

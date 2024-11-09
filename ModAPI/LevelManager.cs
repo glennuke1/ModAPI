@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TommoJProductions.ModApi
+namespace eightyseven.ModApi
 {
     public class LevelManager : MonoBehaviour
     {
