@@ -4,16 +4,16 @@ using System.Resources;
 
 // General Information
 [assembly: AssemblyTitle("ModApi")]
-[assembly: AssemblyDescription("ModApi v0.2.0 BUILD 176")]
+[assembly: AssemblyDescription("ModApi v0.2.0 BUILD 186")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("eightyseven")]
 [assembly: AssemblyProduct("ModApi")]
-[assembly: AssemblyCopyright("eightyseven Copyright © 2024")]
+[assembly: AssemblyCopyright("eightyseven Copyright © 2025")]
 [assembly: NeutralResourcesLanguage("en-AU")]
 
 // Version information
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("0.2.0.176")]
+[assembly: AssemblyFileVersion("0.2.0.186")]
 
 namespace eightyseven.ModApi
 {
@@ -26,7 +26,7 @@ namespace eightyseven.ModApi
         /// <summary>
         /// Represents latest release version date. Format: dd:MM:yyyy hh:mm tt
         /// </summary>
-	    public static readonly string lastestRelease = "01.11.2024 07:20 PM";
+	    public static readonly string lastestRelease = "29.01.2025 10:40 PM";
 
         /// <summary>
         /// Represents current version. (Excluding build number)
@@ -40,20 +40,20 @@ namespace eightyseven.ModApi
         /// <summary>
         /// Represents current full version . (including build number)
         /// </summary>
-	    public static readonly string fullVersion = "0.2.0.176";
+	    public static readonly string fullVersion = "0.2.0.186";
         /// <summary>
         /// Represents current (constant) full version . (including build number)
         /// </summary>
-	    public const string FULL_VERSION = "0.2.0.176";
+	    public const string FULL_VERSION = "0.2.0.186";
         
         /// <summary>
         /// Represents current build number. (excludes major, minor and revision numbers)
         /// </summary>
-	    public static readonly string build = "176";
+	    public static readonly string build = "186";
         /// <summary>
         /// Represents current (const) build number. (excludes major, minor and revision numbers)
         /// </summary>
-	    public const string BUILD = "176";
+	    public const string BUILD = "186";
         
         /// <summary>
         /// Represents if the mod has been complied for x64

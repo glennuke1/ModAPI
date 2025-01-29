@@ -6,7 +6,6 @@ using System.Reflection;
 using HutongGames.PlayMaker;
 using MSCLoader;
 using eightyseven.ModApi.Attachable;
-using eightyseven.ModApi.Database.GameParts;
 using UnityEngine;
 using static UnityEngine.GUILayout;
 
@@ -789,10 +788,6 @@ namespace eightyseven.ModApi
             }
         }
         /// <summary>
-        /// Represents the dev mode behaviour instance. null if <see cref="devMode"/> is <see langword="false"/>.
-        /// </summary>
-        public static DevMode devModeBehaviour { get; internal set; }
-        /// <summary>
         /// Represents modapi behaviour
         /// </summary>
         public static LevelManager levelManager { get; internal set; }
@@ -854,7 +849,6 @@ namespace eightyseven.ModApi
             loadedBolts.Clear();
             Trigger.loadedTriggers.Clear();
             Trigger.triggerDictionary.Clear();
-            Database.Database.refreshCache();
         }
         /// <summary>
         /// finds child object of name <paramref name="childName"/> and gets playmaker called, "Data".
@@ -992,75 +986,6 @@ namespace eightyseven.ModApi
             return ((a - b) < 0 ? ((a - b) * -1) : (a - b)) <= threshold;
         }
 
-        // [GUI]
-        /// <summary>
-        /// draws a gui of info about a game part. (use within an <see cref="AreaScope"/>).
-        /// </summary>
-        /// <param name="gp"></param>
-        public static void drawGamePartInfo(GamePart gp)
-        {
-            // Written, 19.07.2022
-
-            using (new VerticalScope())
-            {
-                drawProperty(gp.thisPart.Value.name);
-                drawPropertyVector3("Position", gp.thisPart.Value.transform.position);
-                drawProperty("Damaged", gp.damaged);
-                drawProperty("Bolted", gp.bolted);
-                drawProperty("Installed", gp.installed);
-                                
-                if (gp is GamePartTime)
-                    drawProperty("Time", (gp as GamePartTime).time);
-                if (gp is GamePartWear)
-                    drawProperty("Wear", (gp as GamePartWear).wear);
-                if (gp is Block)
-                    drawProperty("In hoist", (gp as Block).inHoist);
-                if (gp is OilPan)
-                {
-                    OilPan o = gp as OilPan;
-                    drawProperty("Oil level", o.oilLevel);
-                    drawProperty("Oil contamination", o.oilContamination);
-                    drawProperty("Oil grade", o.oilGrade);
-                }
-                if (gp is RockerShaft)
-                {
-                    RockerShaft r = gp as RockerShaft;
-                    drawProperty("Cyl 1 Exh", r.cyl1Ex);
-                    drawProperty("Cyl 1 In", r.cyl1In);
-
-                    drawProperty("Cyl 2 Exh", r.cyl2Ex);
-                    drawProperty("Cyl 2 In", r.cyl2In);
-
-                    drawProperty("Cyl 3 Exh", r.cyl3Ex);
-                    drawProperty("Cyl 3 In", r.cyl3In);
-
-                    drawProperty("Cyl 4 Exh", r.cyl4Ex);
-                    drawProperty("Cyl 4 In", r.cyl4In);
-
-                }
-                if (gp is Carburator)
-                {
-                    Carburator c = gp as Carburator;
-
-                    drawProperty("Dirt", c.dirt);
-                    drawProperty("idle adjust", c.idleAdjust);
-
-                }
-                if (gp is Distributor)
-                    drawProperty("Spark angle", (gp as Distributor).sparkAngle);
-                if (gp is CamshaftGear)
-                    drawProperty("Angle", (gp as CamshaftGear).angle);
-
-                if (Button("Teleport to player"))
-                {
-                    gp.thisPart.Value.transform.teleport(ModClient.getPOV.transform.position);
-                }
-                if (Button("Teleport to part"))
-                {
-                    ModClient.getPlayer.teleport(gp.thisPart.Value.transform.position);
-                }
-            }
-        }
         /// <summary>
         /// [GUI] draws a vector3 that can be edited.
         /// </summary>

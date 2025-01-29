@@ -20,6 +20,7 @@ namespace eightyseven.ModApi.Attachable
 
         private bool _pickedPartSet = false;
         private bool _pickedPartInherentlySet = false;
+        private bool _loaded = false;
         private Part _pickedPart; 
         private Part[] _inherentlyPickedParts;
         private GameObject _pickedObject;
@@ -52,6 +53,7 @@ namespace eightyseven.ModApi.Attachable
         public SaveManager partSaveManager => _partSaveManager;
         internal bool pickedPartSet => _pickedPartSet;
         internal bool inherentlyPickedPartsSet => _pickedPartInherentlySet;
+        internal bool loaded => _loaded;
 
         #region IEnumerators
 
@@ -120,6 +122,8 @@ namespace eightyseven.ModApi.Attachable
 
             // inject save function (For Auto Save)
             GameObject.Find("ITEMS").GetPlayMaker("SaveItems").GetState("Save game").prependNewAction(onSave);
+
+            _loaded = true;
         }
 
         private void inherentlyPickedPartReset()

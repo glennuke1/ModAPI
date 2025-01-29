@@ -21,7 +21,7 @@ namespace eightyseven.ModApi
         {
             // Written, 11.07.2022
 
-            Debug.Log($"[ModApiLoader] modapi v{ModApi.VersionInfo.version}: Loading");
+            ModConsole.Log($"<color=white>[ModApiLoader]</color> <color=yellow>modapi v{ModApi.VersionInfo.version} build {ModApi.VersionInfo.build}: Loading</color>");
 
             while (ModClient.getPOV == null)
             {
@@ -31,8 +31,18 @@ namespace eightyseven.ModApi
             ModClient.getPartManager.load();
             ModClient.getBoltManager.load();
 
+            while (ModClient.getBoltManager.assetsLoaded == false)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+
+            while (ModClient.getPartManager.loaded == false)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+
             initialized = true;
-            Debug.Log($"[ModApiLoader] modapi v{ModApi.VersionInfo.version}: Loaded");
+            ModConsole.Log($"<color=white>[ModApiLoader]</color> <color=green>modapi v{ModApi.VersionInfo.version} build {ModApi.VersionInfo.build}: Loaded Successfully!</color>");
         }
 
         #endregion
@@ -44,29 +54,15 @@ namespace eightyseven.ModApi
         /// </summary>
         internal static void injectModApi()
         {
-            // Written, 11.09.2023
             bool loaded = ModClient.loaded;
-            Debug.Log("MODAPI_MAIN: Load" + (loaded ? "ed" : "ing"));
             if (!loaded)
             {
                 initialized = false;
                 ModClient.setModApiGo(new GameObject("Mod API Loader"));
                 GameObject.DontDestroyOnLoad(ModClient.modapiGo);
                 ModClient.levelManager = ModClient.modapiGo.AddComponent<LevelManager>();
-
-                ConsoleCommand.Add(new ConsoleCommands());
             }
         }
-
-        internal static void addDevMode()
-        {
-            // Written, 25.08.2022
-
-            if (ModClient.devModeBehaviour == null)
-            {
-                ModClient.devModeBehaviour = ModClient.modapiGo.AddComponent<DevMode>();
-            }
-        }   
 
         #endregion
     }
