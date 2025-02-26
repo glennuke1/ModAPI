@@ -22,4 +22,4 @@
  ### Installation
  1. Download the latest version of [ModAPI](../../releases/latest)
  2. Unpack the folder
- 3. Copy "Release/ModApi.dll" to "Mods/References" folder.
+ 3. Copy "ModApi.dll" to "Mods" folder.
